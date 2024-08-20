@@ -9,7 +9,6 @@
             name="facebook-domain-verification"
             content="g143tc98a7u9ssgylzc1py2syne66n"
         />
-        <!-- Meta Pixel Code -->
         <script>
             !(function (f, b, e, v, n, t, s) {
                 if (f.fbq) return;
@@ -36,13 +35,18 @@
             );
             fbq("init", "1037320100731834");
             fbq("track", "PageView");
-            fbq("track", "ViewContent", {
-                content_name: "DevOps Semarang",
+            fbq("track", "ViewContent");
+        </script>
+        <script>
+            var element = document.getElementById("fb-fire-pixel");
+            executeWhenElementIsVisible(element, function () {
+                fbq("track", "ViewContent");
             });
         </script>
     </head>
     <body>
         <div id="root"></div>
+        <div id="fb-fire-pixel"></div>
         <script type="module" src="/src/main.jsx"></script>
         <noscript
             ><img
