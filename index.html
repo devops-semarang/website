@@ -37,17 +37,17 @@
             fbq("track", "PageView");
             fbq("track", "ViewContent");
         </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <div id="fb-fire-pixel"></div>
+        <script type="module" src="/src/main.jsx"></script>
         <script>
             var element = document.getElementById("fb-fire-pixel");
             executeWhenElementIsVisible(element, function () {
                 fbq("track", "ViewContent");
             });
         </script>
-    </head>
-    <body>
-        <div id="root"></div>
-        <div id="fb-fire-pixel"></div>
-        <script type="module" src="/src/main.jsx"></script>
         <noscript
             ><img
                 height="1"
