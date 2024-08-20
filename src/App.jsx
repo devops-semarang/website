@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Events } from "./pages/events";
+import { Index } from "./pages";
 
 function App() {
   return (

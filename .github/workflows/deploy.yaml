@@ -16,6 +16,8 @@ jobs:
         run: yarn install
       - name: Build project
         run: yarn build
+      - name: Create CNAME file
+        run: echo "devops-semarang.cloud" > ./dist/CNAME
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
