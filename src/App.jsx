@@ -6,6 +6,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path="/" element={<Index />} />
           <Route path="/events/:id" element={<Events />} />
         </Routes>
       </Router>
