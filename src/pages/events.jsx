@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 const events = [
   {
-    short: "JuaraGCP2024SMG",
+    id: "JuaraGCP2024SMG",
     title: "JuaraGCP Semarang 2024",
     url: "https://bit.ly/JuaraGCPSmg",
   },
@@ -10,7 +10,7 @@ const events = [
 
 export const Events = () => {
   let { id } = useParams();
-  const event = events.find((e) => e.short === id);
+  const event = events.find((e) => e.id === id);
   if (!event) {
     console.error("Event not found");
     return null;
